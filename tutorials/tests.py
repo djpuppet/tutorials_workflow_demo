@@ -24,7 +24,7 @@ def test_search_tutorials(new_tutorial):
 def test_update_tutorial(new_tutorial):
     new_tutorial.title = 'Pytest-Django'
     new_tutorial.save()
-    assert Tutorial.objects.filter(title='Pytest-Django').exists()
+    assert Tutorial.objects.filter(title='Pytest-Fail').exists()
 
 @pytest.fixture
 def another_tutorial(db):
